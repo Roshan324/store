@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+				initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- for header part -->
+  
+
+    <div class="main-container">
+        <!-- <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-option option1">
+                        <a href="#orders"><h3> All Orders</h3></a>
+                    </div>
+
+                    <div class="option2 nav-option">
+                        <a href="#products"><h3> All Products</h3></a>
+                    </div>
+
+                    <div class="nav-option option3">
+                        <a href="#addPrd"><h3> Add Product</h3></a>
+                    </div>
+
+                </div>
+            </nav>
+        </div> -->
+        <div>
+        <div class="main">
+            <div class="report-container" id="orders">
+                <div class="report-header">
+                    <h1 class="recent-Articles">Orders</h1>
+                </div>
+        
+                <div class="report-body">
+                    <div class="report-topic-heading">
+                        <h3 class="t-op">Name</h3>
+                        <h3 class="t-op">Address</h3>
+                        <h3 class="t-op">Phone Number</h3>
+                        <h3 class="t-op">model1</h3>
+                        <h3 class="t-op">model2</h3>
+                        <h3 class="t-op">model3</h3>
+                        <h3 class="t-op">Delete</h3>
+                    </div>
+        
+                    <div class="items" id="dashOrders">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="main">
+            <div class="report-container" id="products">
+                <div class="report-header">
+                    <h1 class="recent-Articles">All Products</h1>
+                </div>       
+                <div class="serv__cards" id="dashProds">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="main">
+            <div class="report-container" id="addPrd">
+                <div class="report-header">
+                    <h1 class="recent-Articles">Add Products</h1>
+                </div>       
+                <div class="uploading" id="dashAddProds">
+<label for="inputFile" class="upload-img-label">
+    <input type="file" class="input-file p-5" id="inputFile"  onchange="upload(this)" hidden>
+    <div class="text-center p-4">
+        <i class="fa-solid fa-arrow-up-from-bracket fs-1 mb-3 text-secondary"></i>
+        <div>Drag And Drop Image<br>OR</div>
+        <span class="btn upload-img-btn mt-1">Browse</span>
+    </div>
+    <img class="offer-img" [src]="Url" alt="">
+</label>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </div>
+
+    <script src="./js/dashboard.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
